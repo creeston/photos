@@ -1,0 +1,16 @@
+title: Somewhat somewhere
+subtitle: Radzivon's Photos
+data_source:
+  type: azure-blob
+  container: photos-public
+thumbnail:
+  height: 800
+output:
+  path: docs
+albums:
+  - id: 1
+    title: Hamburg
+    folder: hamburg
+  - id: 2
+    title: Stročyca
+    folder: strochitsy
