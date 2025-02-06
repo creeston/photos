@@ -12,5 +12,11 @@ albums:
     title: Hamburg
     folder: hamburg
   - id: 2
+    title: Sri Lanka
+    folder: srilanka
+  - id: 3
+    title: Firenze
+    folder: firenze
+  - id: 4
     title: Stročyca
     folder: strochitsy
