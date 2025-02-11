@@ -1,22 +1,57 @@
-title: Somewhat somewhere
+title: Somewhat Somewhere
 subtitle: Radzivon's Photos
-data_source:
-  type: azure-blob
-  container: photos-public
+favicon:
+    type: fontawesome
+    name: camera-retro
+
 thumbnail:
-  height: 800
-output:
-  path: docs
+    height: 400
+
+template:
+    name: "nano-gallery"
+
 albums:
-  - id: 1
-    title: Hamburg
-    folder: hamburg
-  - id: 2
-    title: Sri Lanka
-    folder: srilanka
-  - id: 3
-    title: Firenze
-    folder: firenze
-  - id: 4
-    title: Stročyca
-    folder: strochitsy
+    - title: "Sri Lanka"
+      source: "srilanka"
+      cover: _MG_5537.JPG
+
+    - title: "Hamburg"
+      source: "hamburg"
+      cover: IMG_1923.JPG
+
+    - title: "Tatra Mountains"
+      source: "tatry"
+      cover: IMG_1726.jpg
+
+    - title: "Paris"
+      source: "paris"
+      cover: _MG_4569.jpg
+
+    - title: "Film"
+      subtitle: "Various photos took on film cameras around the Belarus mostly"
+      source: "film"
+      cover: PHSQUAT31989035.JPG
+      photos:
+          - title: "Minsk Opera and Ballet Theatre"
+            source: "PHSQUAT33321066.JPG"
+
+    - title: "Rome"
+      source: "rome"
+      cover: _MG_7058.jpg
+
+    - title: Stročyca
+      source: strochytsa
+      cover: _MG_8798.jpg
+
+data_source:
+    type: local
+    path: "${LOCAL_PHOTOS_PATH}"
+
+data_storage:
+    type: azure-blob
+    container: "${AZURE_CONTAINER}"
+    connection_string: "${AZURE_CONNECTION_STRING}"
+
+output:
+    path: docs
+    index: index.html
