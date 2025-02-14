@@ -8,7 +8,7 @@ thumbnail:
     height: 400
 
 template:
-    name: "nano-gallery"
+    url: https://github.com/creeston/ggallery-nanogallery2
 
 albums:
     - title: "Sri Lanka"
@@ -58,4 +58,3 @@ data_storage:
 
 output:
     path: docs
-    index: index.html
