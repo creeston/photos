@@ -5,7 +5,7 @@ favicon:
     name: camera-retro
 
 thumbnail:
-    height: 400
+    height: 800
 
 template:
     url: https://github.com/creeston/ggallery-nanogallery2
