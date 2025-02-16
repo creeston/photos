@@ -15,6 +15,11 @@ albums:
       source: "srilanka"
       cover: _MG_5537.JPG
 
+    - title: "Mallorca"
+      source: "mallorca"
+      subtitle: "Photos from Palma and Port de Soller"
+      cover: IMG_6614.jpg
+
     - title: "Hamburg"
       source: "hamburg"
       cover: IMG_1923.JPG
