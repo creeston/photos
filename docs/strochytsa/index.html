@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Somewhat Somewhere</title>
+    <title>Stročyca</title>
     
       <link 
         rel="icon" 
-        href="favicon.png" 
+        href="../favicon.png" 
 
         
 
@@ -40,7 +40,7 @@
       <div class="navbar-start">
         <div class="navbar-item">
           
-          <button id="previous-toggle" class="button is-dark hidden">
+          <button id="previous-toggle" class="button is-dark">
             <span class="icon">
               <i class="fa-solid fa-left-long"></i>
             </span>
@@ -76,84 +76,111 @@
       items: [
         
         { 
-          src: 'srilanka/_MG_5537_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8722.jpg',
+          srct: 'strochytsa/_MG_8722_thumbnail_1600.jpg',
+          ID: '319',
           
-          ID: '1000000',
-          kind: 'album',
           
-          title: 'Sri Lanka',
+          
         },
         
         { 
-          src: 'mallorca/IMG_6614_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8760.jpg',
+          srct: 'strochytsa/_MG_8760_thumbnail_1600.jpg',
+          ID: '320',
           
-          ID: '1000001',
-          kind: 'album',
           
-          title: 'Mallorca',
+          
         },
         
         { 
-          src: 'hamburg/IMG_1923_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8765.jpg',
+          srct: 'strochytsa/_MG_8765_thumbnail_1600.jpg',
+          ID: '321',
           
-          ID: '1000002',
-          kind: 'album',
           
-          title: 'Hamburg',
+          
         },
         
         { 
-          src: 'tatry/IMG_1726_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8766.jpg',
+          srct: 'strochytsa/_MG_8766_thumbnail_1600.jpg',
+          ID: '322',
           
-          ID: '1000003',
-          kind: 'album',
           
-          title: 'Tatra Mountains',
+          
         },
         
         { 
-          src: 'paris/_MG_4569_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8771.jpg',
+          srct: 'strochytsa/_MG_8771_thumbnail_1600.jpg',
+          ID: '323',
           
-          ID: '1000004',
-          kind: 'album',
           
-          title: 'Paris',
+          
         },
         
         { 
-          src: 'film/PHSQUAT31989035_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8778.jpg',
+          srct: 'strochytsa/_MG_8778_thumbnail_1600.jpg',
+          ID: '324',
           
-          ID: '1000005',
-          kind: 'album',
           
-          title: 'Film',
+          
         },
         
         { 
-          src: 'rome/_MG_7058_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8798.jpg',
+          srct: 'strochytsa/_MG_8798_thumbnail_1600.jpg',
+          ID: '325',
           
-          ID: '1000006',
-          kind: 'album',
           
-          title: 'Rome',
+          
         },
         
         { 
-          src: 'florence/_MG_6813_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8812.jpg',
+          srct: 'strochytsa/_MG_8812_thumbnail_1600.jpg',
+          ID: '326',
           
-          ID: '1000007',
-          kind: 'album',
           
-          title: 'Florence',
+          
         },
         
         { 
-          src: 'strochytsa/_MG_8798_thumbnail_1600.jpg',
+          src: 'strochytsa/_MG_8820.jpg',
+          srct: 'strochytsa/_MG_8820_thumbnail_1600.jpg',
+          ID: '327',
           
-          ID: '1000008',
-          kind: 'album',
           
-          title: 'Stročyca',
+          
+        },
+        
+        { 
+          src: 'strochytsa/_MG_8822.JPG',
+          srct: 'strochytsa/_MG_8822_thumbnail_1600.jpg',
+          ID: '328',
+          
+          
+          
+        },
+        
+        { 
+          src: 'strochytsa/_MG_8828.jpg',
+          srct: 'strochytsa/_MG_8828_thumbnail_1600.jpg',
+          ID: '329',
+          
+          
+          
+        },
+        
+        { 
+          src: 'strochytsa/_MG_8831.JPG',
+          srct: 'strochytsa/_MG_8831_thumbnail_1600.jpg',
+          ID: '330',
+          
+          
+          
         }
         
       ],
@@ -176,13 +203,6 @@
       thumbnailL1GutterHeight: 15,
 
       
-      thumbnailL1HoverEffect2: [
-        { 'name': 'imageGrayOff' },
-        { 'name': 'labelOpacity50', "duration": 1000 },
-        { 'name': 'label_scale_1.0_0.8', "duration": 1000 },
-        { 'name': 'imageScaleIn80', "duration": 1000 },
-      ],
-      
       thumbnailHoverEffect2: 'labelAppear',
       touchAnimation: true,
       touchAutoOpenDelay: -1,
@@ -195,39 +215,12 @@
       },
 
       
-      fnThumbnailInit: function (e) {
-        $(e[0]).on('click', function (e) {
-          e.preventDefault();
-          let innerText = $(this).find('.nGY2GThumbnailLabel').text().trim();
-          let album = Object.values(albums).find(album => album.title === innerText);
-          if (album) {
-            if (window.location.pathname.endsWith('/index.html')) {
-              window.location = album.route + '/index.html';
-            } else {
-              window.location = album.route;
-            }
-          }
-        });
-      },
-      
 
       fnGalleryRenderEnd: function(e) {
         
-          let title = e.title;
+          let title = "Stročyca";
+          
           let subtitle = "";
-          if (e.albumID === '-1') {
-            title = "Somewhat Somewhere";
-            subtitle = "Radzivon's Photos";
-          } else {
-            let album = albums[e.GetID()];
-            if (album) {
-            
-              title = "Somewhat Somewhere";
-              subtitle = "Radzivon's Photos";
-              navigateToAlbums();
-            
-            }
-          }
         
 
         if (title) {
@@ -250,69 +243,6 @@
 
     const albums =  {
         
-            '1000000': {
-              
-              route: 'srilanka',
-              title: 'Sri Lanka',
-            }
-        ,
-        
-            '1000001': {
-              subtitle: 'Photos from Palma and Port de Soller',
-              route: 'mallorca',
-              title: 'Mallorca',
-            }
-        ,
-        
-            '1000002': {
-              
-              route: 'hamburg',
-              title: 'Hamburg',
-            }
-        ,
-        
-            '1000003': {
-              
-              route: 'tatry',
-              title: 'Tatra Mountains',
-            }
-        ,
-        
-            '1000004': {
-              
-              route: 'paris',
-              title: 'Paris',
-            }
-        ,
-        
-            '1000005': {
-              subtitle: 'Various photos took on film cameras around the Belarus mostly',
-              route: 'film',
-              title: 'Film',
-            }
-        ,
-        
-            '1000006': {
-              
-              route: 'rome',
-              title: 'Rome',
-            }
-        ,
-        
-            '1000007': {
-              
-              route: 'florence',
-              title: 'Florence',
-            }
-        ,
-        
-            '1000008': {
-              
-              route: 'strochytsa',
-              title: 'Stročyca',
-            }
-        
-        
     };
 
     function navigateToAlbums() {
@@ -324,7 +254,11 @@
 
     $('#previous-toggle').on('click', function() {
       
-        navigateToAlbums();
+        if (window.location.pathname.endsWith('/index.html')) {
+          window.location = '../index.html';
+        } else {
+          window.location = '../';
+        }
       
     });
 

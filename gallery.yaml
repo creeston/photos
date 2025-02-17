@@ -1,14 +1,16 @@
 title: Somewhat Somewhere
 subtitle: Radzivon's Photos
 favicon:
-    type: fontawesome
-    name: camera-retro
+    type: local
+    name: favicon.png
 
 thumbnail:
     height: 800
 
 template:
     url: https://github.com/creeston/ggallery-nanogallery2
+    parameters:
+      album_routing: true
 
 albums:
     - title: "Sri Lanka"
