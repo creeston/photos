@@ -16,3 +16,9 @@ pip install ggallery
 ```bash
 ggallery
 ```
+
+## Push updated docker image to Docker Hub
+
+```bash
+docker push creeston/photo-gallery:latest
+```
