@@ -65,3 +65,8 @@ data_storage:
 
 output:
     path: docs
+
+docker:
+    image_name: "creeston/photo-gallery"
+    image_version: "latest"
+    host: "${DOCKER_HOST}"
