@@ -13,6 +13,11 @@ template:
       album_routing: true
 
 albums:
+    - title: "Osaka"
+      source: "osaka"
+      subtitle: "Photos from Osaka, Japan. May 2025"
+      cover: DSCF1023.jpg
+
     - title: "Tokyo"
       source: "tokyo"
       subtitle: "Photos from Tokyo, Japan. May 2025"
